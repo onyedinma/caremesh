@@ -1,0 +1,142 @@
+1. Master Comprehensive Prompt (Use this first for overall vision)
+You are a world-class UI/UX designer specializing in premium medical technology. Design a complete, ultra-modern, trustworthy, and beautiful UI/UX design system for "Diaspora Doctor Virtual Care Program" (DDVCP) — a secure telemedicine platform connecting Nigerian diaspora doctors abroad with hospitals, doctors, and patients in Nigeria.
+
+Style: Premium medical-tech aesthetic. Primary colors: Deep Blue (#003087) and Nigerian Green (#008751), with Teal (#00C4B4) accents for calls and success, Warm Orange (#FF6B00) for CTAs. Clean sans-serif typography (Inter or Satoshi), generous whitespace, rounded corners (12-16px), subtle glassmorphism, soft shadows, and smooth micro-animations. Full light and dark mode support. Mobile-first, highly responsive, WCAG AA+ accessible.
+
+Create high-fidelity, realistic mockups with excellent detail, status indicators, and interaction states. Make this feel empowering, secure, professional, and culturally respectful to Nigeria.
+
+2. Branding & Logo Concepts
+textCreate professional branding and logo concepts for "Diaspora Doctor Virtual Care Program" (DDVCP).
+
+Key theme: Bridging the Diaspora to Nigeria’s healthcare with trust, expertise, and healing.
+
+Deliver:
+- Primary logo (wordmark + icon)
+- Icon-only version (perfect for app icon)
+- Horizontal and vertical variations
+- Color versions using Deep Blue and Nigerian Green
+- Subtle elements: stethoscope merged with digital connection or Nigerian map outline
+- App icon designs for iOS/Android (rounded square)
+- Full brand guidelines: color palette with hex codes, typography, tagline options (e.g., “Expertise Without Borders”, “Diaspora Doctors, Nigerian Hearts”), usage rules
+
+Premium, clean, memorable, and professional medical-tech branding.
+
+3. Full Component Library
+textCreate a complete, consistent Design System and Component Library for the Diaspora Doctor Virtual Care Program.
+
+Primary colors: Deep Blue (#003087), Nigerian Green (#008751), Teal, Warm Orange. Full light and dark mode.
+
+Show high-fidelity components including:
+- All button variants (Primary, Secondary, Outline, Text, sizes S/M/L)
+- Cards (standard, impact, elevated, hover states)
+- Navigation systems (web sidebar, top header, mobile bottom nav)
+- Form elements (inputs, dropdowns, search, date pickers, file uploads)
+- Modals, toasts, alerts, success screens
+- Avatars, badges, status indicators (Online with green dot, connection quality bars)
+- Data visualizations (stat cards with count-up, progress rings, simple charts)
+- Medical-specific: EHR timeline, image viewer with annotation tools, vital signs widgets, availability toggle
+
+Present them neatly organized with hover, active, disabled, and loading states. Include spacing, shadows, and typography scale.
+
+4. Diaspora Doctor Dashboard
+textHigh-fidelity mobile and desktop view of the Diaspora Doctor Home Dashboard for Diaspora Doctor Virtual Care Program.
+
+Header: Logo, availability toggle (Online with Nigerian green), profile avatar with notification badge.
+Hero welcome: "Welcome back, Dr. Chukwuma" with quick stats cards: Patients Helped, Mentorship Hours, Earnings This Month, CME Credits.
+Upcoming sessions section with 3-4 cards.
+Quick action floating button: "Start On-Demand Consultation".
+Impact summary with beautiful visuals.
+Bottom navigation for mobile. 
+Premium, clean, motivational design in light and dark mode.
+
+5. Video Consultation Room (Most Important)
+textDesign a premium, realistic, and highly functional Video Consultation Room interface for the Diaspora Doctor Virtual Care Program.
+
+Layout: Large patient video feed, smaller self-view (draggable), left sidebar with Patient EHR tabs (History, Labs, Medications, Notes, Scans).
+Top bar: Patient details, timer, connection quality (Excellent/Good/Poor), security indicators.
+Bottom toolbar: Mic, Camera, Screen Share, Annotate, File Upload, Chat, End Call (red button).
+Show real-time tools in action: image annotation, vitals display, chat panel.
+Include low-bandwidth mode indicator.
+Show both doctor view and patient view side-by-side.
+Ultra-detailed, professional, trustworthy telemedicine UI in light and dark mode.
+
+6. Appointment Scheduling Screen
+textHigh-fidelity booking interface for Diaspora Doctor Virtual Care Program.
+
+Top filters: Specialty dropdown, Date range, On-Demand / Scheduled, Language, Rating.
+Search bar and recommended specialists.
+Grid or list of doctor cards with photo, name, specialty, experience, availability, rating, and "Book Now" button.
+Integrated calendar view on desktop.
+Clean, easy-to-use, trustworthy design with strong CTAs.
+
+7. Electronic Health Records (EHR) Screen
+textProfessional Patient EHR interface for the Diaspora Doctor Virtual Care Program.
+
+Tabbed or sidebar navigation: Overview, History, Medications, Labs, Imaging, Notes.
+Timeline view of visits with expandable entries.
+Sample uploaded scans (X-ray, MRI) with preview and annotation capability.
+Lab results table with flags for abnormal values.
+"Share with Local Doctor" and "Request Update" buttons.
+Strong security indicators and access logs.
+Clean medical-grade information hierarchy.
+
+8. Mentorship Dashboard
+textMentorship Dashboard for diaspora doctors mentoring in Nigeria.
+
+Sections: My Mentees (avatar grid), Scheduled Sessions, Open Case Discussions, Progress Analytics.
+Featured case cards with "Review & Advise" buttons.
+Impact metrics for mentorship hours and junior doctor growth.
+Warm, supportive, and professional interface.
+
+9. Incentives & Impact Center
+textRewards and Impact Dashboard for diaspora doctors.
+
+Hero impact summary with animated-style stats.
+Tabs: Earnings & Payouts, CME Credits, Tax Incentives, Recognition & Awards, Leaderboard.
+Payment history, available rewards, success stories/testimonials.
+Motivating and visually rewarding design with green accents.
+
+10. Patient Mobile App Home
+textClean, simple, and friendly mobile home screen for Nigerian patients.
+
+Large prominent green "Talk to a Doctor Now" button.
+Upcoming appointment card.
+Recent consultations.
+Health summary and medication reminders.
+Bottom navigation (Home, Appointments, Records, Profile).
+Warm, approachable, accessible design suitable for varied literacy levels.
+
+11. Local Nigerian Doctor / Hospital Dashboard
+textDashboard for doctors and admins in Nigerian hospitals.
+
+Live patient queue.
+"Request Diaspora Specialist" prominent button.
+Pending second opinions section.
+Real-time availability of diaspora doctors (green dots).
+Usage statistics for the hospital.
+Professional desktop/tablet optimized design.
+
+12. Onboarding & Profile Setup Flow
+textBeautiful 5-step onboarding flow for new diaspora doctors:
+1. Welcome screen with illustration
+2. Role & verification
+3. License upload
+4. Availability & timezone
+5. Incentives preview
+
+Progressive, welcoming, and professional.
+
+13. Micro-interactions & Animations
+textProvide detailed micro-interaction specifications for the Diaspora Doctor Virtual Care Program to make the UI feel alive and premium.
+
+Cover:
+- Availability toggle animation
+- Video call connection flow
+- Stat count-up on dashboard
+- Button press and success animations
+- File upload progress
+- EHR expansion
+- Notification system
+- Low-bandwidth mode transition
+
+Describe them clearly for implementation (e.g., Framer Motion or Lottie).
