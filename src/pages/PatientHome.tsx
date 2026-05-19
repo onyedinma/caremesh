@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext'
 import { Sun, Moon, Phone, Calendar, FileText, User, Home, Clock, ChevronRight, Pill, Bell, Search, MapPin, Star, Video, Shield, Activity, Heart, Thermometer, Droplets, Wind, Edit3, LogOut, Settings, HelpCircle, ArrowRight } from 'lucide-react'
 import Logo from '../components/Logo'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 type Tab = 'home' | 'appointments' | 'records' | 'profile'
 
@@ -316,7 +316,7 @@ export default function PatientHome() {
   const { theme, toggleTheme } = useTheme()
   const [activeTab, setActiveTab] = useState<Tab>('home')
 
-  const tabs: { id: Tab; icon: JSX.Element; label: string }[] = [
+  const tabs: { id: Tab; icon: React.ReactNode; label: string }[] = [
     { id: 'home', icon: <Home className="w-5 h-5" />, label: 'Home' },
     { id: 'appointments', icon: <Calendar className="w-5 h-5" />, label: 'Appointments' },
     { id: 'records', icon: <FileText className="w-5 h-5" />, label: 'Records' },
