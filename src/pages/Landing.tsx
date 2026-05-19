@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext'
-import { Sun, Moon, Shield, Video, Heart, Users, Globe, ArrowRight, Star, ChevronRight } from 'lucide-react'
+import { Sun, Moon, Shield, Video, Heart, Users, Globe, ArrowRight, Star, ChevronRight, Zap, TrendingUp, DollarSign, Stethoscope } from 'lucide-react'
 import Logo from '../components/Logo'
 import { useEffect, useRef, useState } from 'react'
 
@@ -40,8 +40,8 @@ export default function Landing() {
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Features</a>
-            <a href="#impact" className="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Impact</a>
-            <a href="#specialties" className="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Specialties</a>
+            <Link to="/impact" className="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Impact</Link>
+            <Link to="/specialties" className="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Specialties</Link>
           </div>
           <div className="flex items-center gap-3">
             <button onClick={toggleTheme} className="p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
@@ -125,6 +125,76 @@ export default function Landing() {
                 <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{feature.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Preview */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">Measurable Impact</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Real results from diaspora doctors transforming Nigerian healthcare.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {[
+              { before: '72hrs', after: '< 30min', label: 'Specialist Access', icon: <Zap className="w-6 h-6" /> },
+              { before: '34%', after: '89%', label: 'Diagnostic Accuracy', icon: <TrendingUp className="w-6 h-6" /> },
+              { before: '$2,400', after: '$75', label: 'Cost per Consult', icon: <DollarSign className="w-6 h-6" /> },
+            ].map((stat, i) => (
+              <div key={i} className="card-base p-6 text-center group hover:-translate-y-1">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-nigerian-500 to-accent-500 flex items-center justify-center text-white mb-4 mx-auto group-hover:scale-110 transition-transform">
+                  {stat.icon}
+                </div>
+                <div className="flex items-center justify-center gap-3 mb-3">
+                  <span className="text-lg font-bold text-red-400 line-through opacity-60">{stat.before}</span>
+                  <ArrowRight className="w-4 h-4 text-nigerian-500" />
+                  <span className="text-2xl font-extrabold text-nigerian-600 dark:text-nigerian-400">{stat.after}</span>
+                </div>
+                <h3 className="font-bold text-gray-900 dark:text-white">{stat.label}</h3>
+              </div>
+            ))}
+          </div>
+          <div className="text-center">
+            <Link to="/impact" className="btn-primary text-base !px-8 !py-4">
+              See Full Impact Report <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Specialties Preview */}
+      <section className="py-20 bg-surface-50 dark:bg-gray-900/50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">Expert Care Across Every Specialty</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Access 500+ diaspora doctors across 16 medical specialties.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            {[
+              { name: 'Cardiology', icon: '🫀', available: 8 },
+              { name: 'Pediatrics', icon: '👶', available: 6 },
+              { name: 'Internal Medicine', icon: '🩺', available: 12 },
+              { name: 'Surgery', icon: '⚕️', available: 4 },
+              { name: 'OB/GYN', icon: '🤰', available: 5 },
+              { name: 'Neurology', icon: '🧠', available: 2 },
+              { name: 'Oncology', icon: '🎗️', available: 3 },
+              { name: 'Psychiatry', icon: '🧘', available: 5 },
+            ].map((spec, i) => (
+              <Link key={i} to="/specialties" className="card-base p-4 group hover:-translate-y-1 text-center">
+                <span className="text-3xl block mb-2">{spec.icon}</span>
+                <h3 className="font-bold text-gray-900 dark:text-white text-sm group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">{spec.name}</h3>
+                <div className="flex items-center justify-center gap-1 mt-1">
+                  <span className="w-1.5 h-1.5 bg-nigerian-500 rounded-full animate-pulse-soft" />
+                  <span className="text-xs text-nigerian-600 dark:text-nigerian-400 font-semibold">{spec.available} online</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center">
+            <Link to="/specialties" className="btn-primary text-base !px-8 !py-4">
+              View All 16 Specialties <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>

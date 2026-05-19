@@ -9,6 +9,8 @@ import EHR from './pages/EHR'
 import Mentorship from './pages/Mentorship'
 import Incentives from './pages/Incentives'
 import Onboarding from './pages/Onboarding'
+import Impact from './pages/Impact'
+import Specialties from './pages/Specialties'
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
       <Route path="/mentorship" element={<Mentorship />} />
       <Route path="/incentives" element={<Incentives />} />
       <Route path="/onboarding" element={<Onboarding />} />
+      <Route path="/impact" element={<Impact />} />
+      <Route path="/specialties" element={<Specialties />} />
     </Routes>
   )
 }
